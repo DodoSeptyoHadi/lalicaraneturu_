@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DodoStecuu | Portfolio</title>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
     * {
       margin: 0;
@@ -19,7 +18,6 @@
       line-height: 1.6;
       background-color: #fffefe;
       color: #333;
-
     }
 
     header {
@@ -38,6 +36,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -49,7 +48,10 @@
 
     nav {
       display: flex;
-      gap: 20px;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
     }
 
     nav a {
@@ -73,8 +75,8 @@
     }
 
     .profile-img img {
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       border: 4px solid #11c1f2;
       margin-bottom: 20px;
@@ -108,7 +110,7 @@
     }
 
     .skills img {
-      width: 60px;
+      width: 50px;
       margin: 10px;
       transition: transform 0.3s;
     }
@@ -128,7 +130,7 @@
       background: white;
       border: 1px solid #ccc;
       padding: 20px;
-      width: 250px;
+      width: 260px;
       border-radius: 10px;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
@@ -167,6 +169,29 @@
       box-shadow: 0 0 10px #aaa;
       cursor: pointer;
     }
+
+    /* Responsif untuk HP */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -198,7 +223,14 @@
 
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Welcome to my portfolio. I'm a WhatsApp bot developer and passionate programmer from Indonesia.</p>
+    <p>Welcome to my portfolio. I'm a WhatsApp bot developer and passionate programmer from Indonesia.
+      <br>
+      <br>
+      Halo Teman-Teman! Nama saya Dodo Septyo Hadi. Saya merupakan siswa kelas 10 RPL 2 di SMK Negeri 2 Mojokerto, bagian dari angkatan ke-13. Saya tinggal di Link. Kemasan GGV, Kelurahan Blooto, Kecamatan Prajurit Kulon, Kota Mojokerto.
+
+Saya memilih jurusan Rekayasa Perangkat Lunak (RPL) karena saya tertarik dengan dunia teknologi, khususnya dalam bidang pemrograman dan pengembangan perangkat lunak. Saya berharap selama bersekolah di SMKN 2 Mojokerto, saya bisa mengembangkan kemampuan saya dan menjadi pribadi yang bermanfaat di dunia teknologi maupun kehidupan sehari-hari.
+Dan Cita Cita Saya Ingin Menjadi FullStack Developer.
+    </p>
   </section>
 
   <section id="skills" class="section">
@@ -217,22 +249,23 @@
     <div class="projects">
       <div class="card">
         <h3>WhatsApp Bot</h3>
-        <p>Bot automation for WhatsApp using Node.js & Baileys.</p>
+        <p>Otomatisasi bot untuk WhatsApp menggunakan Node.js dan Baileys</p>
+        <a href="#" target="_blank"> Coming Soon</a>
       </div>
       <div class="card">
         <h3>REST API v1</h3>
         <p>Initial API version for tests and docs.</p>
-        <a href="https://old.lyyn-api.my.id/" target="_blank">Visit</a>
+        <a href="https://old.lyyn-api.my.id/" target="_blank">Kunjungi</a>
       </div>
       <div class="card">
         <h3>REST API v2</h3>
         <p>Experimental version with new features.</p>
-        <a href="https://dev.lyyn-api.my.id/" target="_blank">Visit</a>
+        <a href="https://dev.lyyn-api.my.id/" target="_blank">Kunjungi</a>
       </div>
       <div class="card">
         <h3>REST API v3</h3>
         <p>Stable & public version of my REST API.</p>
-        <a href="https://lyyn-api.my.id/" target="_blank">Visit</a>
+        <a href="https://lyyn-api.my.id/" target="_blank">Kunjungi</a>
       </div>
       <div class="card">
         <h3>Portfolio Website</h3>
@@ -255,7 +288,7 @@
 
   <script>
     const roles = ["Web Developer", "Front End Developer", "Script Creator", "Developer", "Programmer"];
-    const desc = "Welcome to my portfolio. My name is DodoSeptyoHadi. I'm a WhatsApp bot developer. Hanya Ingin Menjadi Fullstack Developer.";
+    const desc = "Welcome to my portfolio. My name is DodoSeptyoHadi. I'm a WhatsApp bot developer.";
     let roleIndex = 0, roleChar = 0, descChar = 0;
 
     function typeRole() {
@@ -283,14 +316,12 @@
 
     document.getElementById("playMusicBtn").addEventListener("click", () => {
       const music = document.getElementById("bgMusic");
-      music.play()
-        .then(() => {
-          document.getElementById("playMusicBtn").style.display = "none";
-        })
-        .catch(err => {
-          alert("Gagal memutar musik. Mungkin browser memblokirnya.");
-          console.error(err);
-        });
+      music.play().then(() => {
+        document.getElementById("playMusicBtn").style.display = "none";
+      }).catch(err => {
+        alert("Gagal memutar musik. Mungkin browser memblokirnya.");
+        console.error(err);
+      });
     });
 
     window.onload = () => {
@@ -300,4 +331,3 @@
   </script>
 </body>
 </html>
-
