@@ -2,8 +2,9 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DodoStecuu | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lalicaraneturu | Portofolio</title>
+  <link rel="icon" type="image.png" href="">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
@@ -18,6 +19,7 @@
       line-height: 1.6;
       background-color: #fffefe;
       color: #333;
+      border-radius: 30px;
     }
 
     header {
@@ -26,7 +28,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .container {
@@ -37,6 +39,7 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      border-radius: 20px;
     }
 
     .logo {
@@ -66,7 +69,7 @@
     nav a:hover {
       background-color: white;
       color: #000000;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
     .section {
@@ -79,7 +82,8 @@
       height: 130px;
       border-radius: 50%;
       border: 4px solid #11c1f2;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
+      box-shadow: white;
     }
 
     .highlight {
@@ -113,12 +117,21 @@
       width: 50px;
       margin: 10px;
       transition: transform 0.3s;
+      background-color: white;
+      
     }
 
     .skills img:hover {
-      transform: scale(1.1);
+      transform: scale(1.3);
     }
 
+    .skills-style {
+              background-color: white;
+        padding: 20px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
+    }
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -132,7 +145,7 @@
       padding: 20px;
       width: 260px;
       border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
 
     .card h3 {
@@ -170,8 +183,7 @@
       cursor: pointer;
     }
 
-    /* Responsif untuk HP */
-    @media (max-width: 40px) {
+    @media (max-width: 50px) {
       .container {
         flex-direction: column;
         text-align: center;
@@ -197,7 +209,7 @@
 <body>
   <header>
     <div class="container">
-      <h1 class="logo">Selamat Datang</h1>
+      <h1 class="logo"> My Portofolio</h1>
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -210,9 +222,9 @@
 
   <section id="home" class="section">
     <div class="profile-img">
-      <img src="https://i.postimg.cc/nhVj5284/IMG-20250722-213940-215.webp" alt="DodoStecuu">
+      <img src="https://i.postimg.cc/RhfswZK9/IMG-20250810-031104-345.webp" alt="Fotoku">
     </div>
-    <h2>Hi, I'm <span class="highlight">Dodo</span></h2>
+    <h2>Hai, A'ku <span class="highlight">dodo</span></h2>
     <p id="typing-role" class="highlight"></p>
     <p id="typing-desc" class="description"></p>
     <div class="social">
@@ -223,16 +235,14 @@
 
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Welcome to my portfolio. I'm a WhatsApp bot developer and passionate programmer from Indonesia.
-      <br>
-      <br>
-      Halo Teman-Teman! Nama saya Dodo Septyo Hadi. Saya merupakan siswa kelas 10 RPL 2 di SMK Negeri 2 Mojokerto, bagian dari angkatan ke-13. Saya tinggal di Link. Kemasan GGV, Kelurahan Blooto, Kecamatan Prajurit Kulon, Kota Mojokerto.
-
-Saya memilih jurusan Rekayasa Perangkat Lunak (RPL) karena saya tertarik dengan dunia teknologi, khususnya dalam bidang pemrograman dan pengembangan perangkat lunak. Saya berharap selama bersekolah di SMKN 2 Mojokerto, saya bisa mengembangkan kemampuan saya dan menjadi pribadi yang bermanfaat di dunia teknologi maupun kehidupan sehari-hari.
-Dan Cita Cita Saya Ingin Menjadi FullStack Developer.
+    <p>
+      Welcome To My Portofolio. I'm a WhatsApp bot developer and passionate programmer from Indonesia.<br><br>
+      Halo Teman-Teman! Nama saya Dodo Septyo Hadi. Saya merupakan siswa kelas 10 RPL 2 di SMK Negeri 2 Mojokerto, bagian dari angkatan ke-13. Saya tinggal di Link. Kemasan GGV, Kelurahan Blooto, Kecamatan Prajurit Kulon, Kota Mojokerto.<br><br>
+      Saya memilih jurusan Rekayasa Perangkat Lunak (RPL) karena saya tertarik dengan dunia teknologi, khususnya dalam bidang pemrograman dan pengembangan perangkat lunak. Saya berharap selama bersekolah di SMKN 2 Mojokerto, saya bisa mengembangkan kemampuan saya dan menjadi pribadi yang bermanfaat di dunia teknologi maupun kehidupan sehari-hari. Dan Cita Cita Saya Ingin Menjadi FullStack Developer.
     </p>
   </section>
 
+  <div class="skills-style">
   <section id="skills" class="section">
     <h2>Skills</h2>
     <div class="skills">
@@ -241,16 +251,28 @@ Dan Cita Cita Saya Ingin Menjadi FullStack Developer.
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash">
+
+      <p><b>Tentang aku</b>
+      <br>
+      <br>
+
+Aku adalah seorang pembelajar yang sedang menjelajahi dunia pemrograman dari nol. Saat ini, aku fokus mempelajari HTML, CSS, dan JavaScript untuk membangun website interaktif, sekaligus belajar Python untuk memahami logika pemrograman yang lebih luas.
+
+HTML mengajarkanku bagaimana membentuk kerangka sebuah website, CSS membuatnya indah dan rapi, JavaScript memberinya nyawa, dan Python membuka jalan menuju analisis data, otomasi, hingga kecerdasan buatan.
+
+Perjalanan ini bukan sekadar mempelajari kode, tapi juga belajar berpikir logis, kreatif, dan tidak mudah menyerah. Setiap baris kode yang kutulis adalah langkah kecil menuju mimpiku menjadi seorang developer yang handal.</p>
     </div>
   </section>
-
+<br>
+<br>
+<div class="projects-isi">
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="projects">
       <div class="card">
         <h3>WhatsApp Bot</h3>
         <p>Otomatisasi bot untuk WhatsApp menggunakan Node.js dan Baileys</p>
-        <a href="#" target="_blank"> Coming Soon</a>
+        <a href="#" target="_blank">Coming Soon</a>
       </div>
       <div class="card">
         <h3>REST API v1</h3>
@@ -269,26 +291,26 @@ Dan Cita Cita Saya Ingin Menjadi FullStack Developer.
       </div>
       <div class="card">
         <h3>Portfolio Website</h3>
-        <p>Website Ini Aku Buat Pake Sepenuh Hati.</p>
+        <p>Website Ini Aku Buat Pake HTML, CSS, Dan Sedikit Javascript.</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: <strong>lalicaraneturu@gmail.com</strong></p>
-    <p>Contact: <strong>+62 877 2977 0078</strong></p>
+    <p>Email: <strong>doflxzx@gmail.com</strong></p>
+    <p>Contact: <strong>+62 877-2977-0078</strong></p>
   </section>
 
   <footer>
-    <p>&copy;2025 <span>DodoSeptyoHadi</span>. All rights reserved ⚡</p>
+    <p>&copy;2025 <span>DodoSeptyo</span> ⚡</p>
   </footer>
 
-  <button id="playMusicBtn">Play Music</button>
-  <audio id="bgMusic" src="https://files.catbox.moe/owi9hy.mp3" loop></audio>
+  <button id="playMusicBtn">Putar Musik</button>
+  <audio id="bgMusic" src="https://files.catbox.moe/v4nn24.mp3" loop></audio>
 
   <script>
-    const roles = ["Web Developer", "Front End Developer", "Script Creator", "Developer", "Programmer"];
+    const roles = ["Programmer", "Script Creator", , "Hanya Ingin Jadi Full-Stack Developer"];
     const desc = "Welcome to my portfolio. My name is DodoSeptyoHadi. I'm a WhatsApp bot developer.";
     let roleIndex = 0, roleChar = 0, descChar = 0;
 
@@ -329,6 +351,23 @@ Dan Cita Cita Saya Ingin Menjadi FullStack Developer.
       typeRole();
       typeDesc();
     };
+
+    const playMusicBtn = document.getElementById("playMusicBtn");
+  const bgMusic = document.getElementById("bgMusic");
+
+  let isPlaying = false;
+
+  playMusicBtn.addEventListener("click", () => {
+    if (isPlaying) {
+      bgMusic.pause();
+      playMusicBtn.textContent = "Putar Musik";
+    } else {
+      bgMusic.play();
+      playMusicBtn.textContent = "Hentikan Musik";
+      alert(" Kamu Menekan Tombol Mulai Musik!! Enjoy Musiknya Yaa😊🥳");
+    }
+    isPlaying = !isPlaying;
+  });
   </script>
 </body>
-</html> 
+</html>
