@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lalicaraneturu | Portofolio</title>
-  <link rel="icon" type="image.png" href="">
+  <title>404NoTFound</title>
+  <link rel="icon" type="image/png" href="">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
@@ -17,29 +17,30 @@
     body {
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
-      background-color: #fffefe;
-      color: #333;
+      background: linear-gradient(to bottom right, #ffffff, #17d6fc);
       border-radius: 30px;
+      transition: background 0.5s, color 0.5s;
+      overflow-x: hidden;
     }
 
     header {
-      background: linear-gradient(135deg, #00c6ff, #a1c4ed);
+      background: linear-gradient(135deg, #00c6ff, #d2e4f9);
       padding: 15px 0;
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .container {
-      width: 90%;
-      max-width: 1100px;
+      width: 100%;
+      max-width: 1000px;
       margin: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      border-radius: 20px;
+      border-radius: 30px;
     }
 
     .logo {
@@ -83,7 +84,6 @@
       border-radius: 50%;
       border: 4px solid #11c1f2;
       margin-bottom: 50px;
-      box-shadow: white;
     }
 
     .highlight {
@@ -110,7 +110,7 @@
     }
 
     .social a:hover {
-      background: #0072ff;
+      background: #0073ff;
     }
 
     .skills img {
@@ -118,7 +118,6 @@
       margin: 10px;
       transition: transform 0.3s;
       background-color: white;
-      
     }
 
     .skills img:hover {
@@ -126,12 +125,13 @@
     }
 
     .skills-style {
-              background-color: white;
-        padding: 20px;
-        margin-bottom: 50px;
-        box-shadow: 0 0 10px black;
-        border-radius: 10px;
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 50px;
+      box-shadow: 0 0 10px black;
+      border-radius: 10px;
     }
+
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -164,6 +164,7 @@
       color: #fff;
       text-align: center;
       padding: 20px;
+      border-radius: 20px;
     }
 
     footer span {
@@ -181,9 +182,14 @@
       border-radius: 30px;
       box-shadow: 0 0 10px #aaa;
       cursor: pointer;
+      z-index: 2000;
     }
 
-    @media (max-width: 50px) {
+    #typing-role {
+  transition: opacity 0.5s ease-in-out;
+}
+
+    @media (max-width: 1px) {
       .container {
         flex-direction: column;
         text-align: center;
@@ -204,12 +210,38 @@
         width: 90%;
       }
     }
+
+    /* ❄️ Efek salju */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      z-index: 9999;
+      user-select: none;
+      pointer-events: none;
+      color: #e0f7ff;
+      text-shadow: 0 0 8px #4ec8f8;
+      font-size: 1.2em;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fall {
+      from {
+        transform: translateY(-10px);
+      }
+      to {
+        transform: translateY(100vh);
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <div class="container">
-      <h1 class="logo"> My Portofolio</h1>
+      <h1 class="logo">Selamat Datang</h1>
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -222,50 +254,51 @@
 
   <section id="home" class="section">
     <div class="profile-img">
-      <img src="https://i.postimg.cc/RhfswZK9/IMG-20250810-031104-345.webp" alt="Fotoku">
+      <img src="https://i.postimg.cc/Qdcqygcp/IMG-20250812-205940-742.webp" alt="Fotoku">
     </div>
-    <h2>Hai, A'ku <span class="highlight">dodo</span></h2>
+    <h2>Hai, Aku <span class="highlight">dodo</span></h2>
     <p id="typing-role" class="highlight"></p>
     <p id="typing-desc" class="description"></p>
+
+    <br>
+    <h2>Sosial Media</h2>
     <div class="social">
       <a href="https://wa.me/6287729770078">WhatsApp</a>
       <a href="https://www.instagram.com/dodoseptyo_">Instagram</a>
+      <a href="https://www.tiktok.com/dodo.Septyo_">Tiktok</a>
     </div>
   </section>
 
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      Welcome To My Portofolio. I'm a WhatsApp bot developer and passionate programmer from Indonesia.<br><br>
-      Halo Teman-Teman! Nama saya Dodo Septyo Hadi. Saya merupakan siswa kelas 10 RPL 2 di SMK Negeri 2 Mojokerto, bagian dari angkatan ke-13. Saya tinggal di Link. Kemasan GGV, Kelurahan Blooto, Kecamatan Prajurit Kulon, Kota Mojokerto.<br><br>
+      Welcome To My Portofolio. I'm a WhatsApp bot developer and passionate programmer from Indonesia.
+      <br><br>
+      Halo Teman-Teman! Nama saya Dodo Septyo Hadi. Saya merupakan siswa kelas 10 RPL 2 di SMK Negeri 2 Mojokerto, bagian dari angkatan ke-13. Saya tinggal di Link. Kemasan GGV, Kelurahan Blooto, Kecamatan Prajurit Kulon, Kota Mojokerto.
       Saya memilih jurusan Rekayasa Perangkat Lunak (RPL) karena saya tertarik dengan dunia teknologi, khususnya dalam bidang pemrograman dan pengembangan perangkat lunak. Saya berharap selama bersekolah di SMKN 2 Mojokerto, saya bisa mengembangkan kemampuan saya dan menjadi pribadi yang bermanfaat di dunia teknologi maupun kehidupan sehari-hari. Dan Cita Cita Saya Ingin Menjadi FullStack Developer.
     </p>
   </section>
 
   <div class="skills-style">
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash">
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash">
 
-      <p><b>Tentang aku</b>
-      <br>
-      <br>
+        <br><br>
+        <p><b>Tentang aku</b><br><br>
+        Aku adalah seorang pelajar yang sedang menjelajahi dunia pemrograman dari nol. Saat ini, aku fokus mempelajari HTML, CSS, dan JavaScript untuk membangun website interaktif, sekaligus belajar Python untuk memahami logika pemrograman yang lebih luas.<br><br>
+        HTML mengajarkanku bagaimana membentuk kerangka sebuah website, CSS membuatnya indah dan rapi, JavaScript memberinya nyawa, dan Python membuka jalan menuju analisis data, otomasi, hingga kecerdasan buatan.<br><br>
+        Perjalanan ini bukan sekadar mempelajari kode, tapi juga belajar berpikir logis, kreatif, dan tidak mudah menyerah. Setiap baris kode yang kutulis adalah langkah kecil menuju mimpiku menjadi seorang developer yang handal.
+        </p>
+      </div>
+    </section>
+  </div>
 
-Aku adalah seorang pembelajar yang sedang menjelajahi dunia pemrograman dari nol. Saat ini, aku fokus mempelajari HTML, CSS, dan JavaScript untuk membangun website interaktif, sekaligus belajar Python untuk memahami logika pemrograman yang lebih luas.
-
-HTML mengajarkanku bagaimana membentuk kerangka sebuah website, CSS membuatnya indah dan rapi, JavaScript memberinya nyawa, dan Python membuka jalan menuju analisis data, otomasi, hingga kecerdasan buatan.
-
-Perjalanan ini bukan sekadar mempelajari kode, tapi juga belajar berpikir logis, kreatif, dan tidak mudah menyerah. Setiap baris kode yang kutulis adalah langkah kecil menuju mimpiku menjadi seorang developer yang handal.</p>
-    </div>
-  </section>
-<br>
-<br>
-<div class="projects-isi">
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="projects">
@@ -291,7 +324,7 @@ Perjalanan ini bukan sekadar mempelajari kode, tapi juga belajar berpikir logis,
       </div>
       <div class="card">
         <h3>Portfolio Website</h3>
-        <p>Website Ini Aku Buat Pake HTML, CSS, Dan Sedikit Javascript.</p>
+        <p>Website ini aku buat pakai HTML, CSS, dan sedikit JavaScript.</p>
       </div>
     </div>
   </section>
@@ -300,17 +333,20 @@ Perjalanan ini bukan sekadar mempelajari kode, tapi juga belajar berpikir logis,
     <h2>Contact</h2>
     <p>Email: <strong>doflxzx@gmail.com</strong></p>
     <p>Contact: <strong>+62 877-2977-0078</strong></p>
+    <p><a href="https://www.instagram.com/dodoseptyo_">Instagram</a></p>
   </section>
 
   <footer>
-    <p>&copy;2025 <span>DodoSeptyo</span> ⚡</p>
+    <p>&copy; 404NoTHuMan <span>dodoseptyo.com.id</span> ⚡</p>
   </footer>
 
   <button id="playMusicBtn">Putar Musik</button>
-  <audio id="bgMusic" src="https://files.catbox.moe/v4nn24.mp3" loop></audio>
+  <audio id="bgMusic" src="https://files.catbox.moe/8dczns.mp3" loop></audio>
+
+  <button id="darkModeBtn">🌙</button>
 
   <script>
-    const roles = ["Programmer", "Script Creator",  "Hanya Ingin Jadi Full-Stack Developer"];
+    const roles = ["Programmer", "Script Creator", "Hanya Ingin Jadi Full-Stack Developer"];
     const desc = "Welcome to my portfolio. My name is DodoSeptyoHadi. I'm a WhatsApp bot developer.";
     let roleIndex = 0, roleChar = 0, descChar = 0;
 
@@ -337,14 +373,20 @@ Perjalanan ini bukan sekadar mempelajari kode, tapi juga belajar berpikir logis,
       }
     }
 
-    document.getElementById("playMusicBtn").addEventListener("click", () => {
-      const music = document.getElementById("bgMusic");
-      music.play().then(() => {
-        document.getElementById("playMusicBtn").style.display = "none";
-      }).catch(err => {
-        alert("Gagal memutar musik. Mungkin browser memblokirnya.");
-        console.error(err);
-      });
+    const playMusicBtn = document.getElementById("playMusicBtn");
+    const bgMusic = document.getElementById("bgMusic");
+    let isPlaying = false;
+
+    playMusicBtn.addEventListener("click", () => {
+      if (isPlaying) {
+        bgMusic.pause();
+        playMusicBtn.textContent = "Putar Musik";
+      } else {
+        bgMusic.play();
+        playMusicBtn.textContent = "Hentikan Musik";
+        alert("Kamu menekan tombol mulai musik! Enjoy musiknya ya 😊🥳");
+      }
+      isPlaying = !isPlaying;
     });
 
     window.onload = () => {
@@ -352,22 +394,22 @@ Perjalanan ini bukan sekadar mempelajari kode, tapi juga belajar berpikir logis,
       typeDesc();
     };
 
-    const playMusicBtn = document.getElementById("playMusicBtn");
-  const bgMusic = document.getElementById("bgMusic");
-
-  let isPlaying = false;
-
-  playMusicBtn.addEventListener("click", () => {
-    if (isPlaying) {
-      bgMusic.pause();
-      playMusicBtn.textContent = "Putar Musik";
-    } else {
-      bgMusic.play();
-      playMusicBtn.textContent = "Hentikan Musik";
-      alert(" Kamu Menekan Tombol Mulai Musik!! Enjoy Musiknya Yaa😊🥳");
+    /* ❄️ Script bikin salju */
+    function createSnowflake() {
+      const snowflake = document.createElement("div");
+      snowflake.classList.add("snowflake");
+      snowflake.textContent = "❄";
+      snowflake.style.left = Math.random() * window.innerWidth + "px";
+      snowflake.style.fontSize = Math.random() * 20 + 15 + "px";
+      snowflake.style.opacity = Math.random() * 0.5 + 0.5;
+      snowflake.style.animationDuration = Math.random() * 5 + 3 + "s";
+      document.body.appendChild(snowflake);
+      setTimeout(() => snowflake.remove(), 8000);
     }
-    isPlaying = !isPlaying;
-  });
+
+    setInterval(createSnowflake, 150);
   </script>
 </body>
 </html>
+
+</div>
